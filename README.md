@@ -94,7 +94,7 @@ This document provides an overview of the available RESTFull API endpoints for m
             'id' (integer): ID of the room to retrieve details for.
           Authentication Required: Yes
 
- - Bookings
+   - Bookings
         - Retrieve All Bookings
             URL: /api_bookings/bookings
             Method: GET
@@ -114,7 +114,7 @@ This document provides an overview of the available RESTFull API endpoints for m
               'total_price' (numeric): Total price for the booking.
             Authentication Required: Yes
 
-  - Payments
+    - Payments
         - Record Payment for a Booking
             URL: /api_payments/payments/create
             Method: POST
