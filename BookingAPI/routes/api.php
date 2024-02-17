@@ -121,4 +121,8 @@ $router->prefix('api_tests')->withoutMiddleware([App\Http\Middleware\PassportAut
     $router->post('/rooms/test/create', [
         'uses' => 'App\Http\Controllers\RoomsController@store'
     ]);
+
+    $router->get('/rooms/{id}/test/show', [
+        'uses' => 'App\Http\Controllers\RoomsController@show'
+    ]);
 });

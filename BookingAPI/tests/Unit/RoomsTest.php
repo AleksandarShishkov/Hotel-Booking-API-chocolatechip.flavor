@@ -70,4 +70,23 @@ class RoomsTest extends TestCase
             $this->fail('Error: ' . $e->getMessage());
         }
     }
+
+
+    public function test_show_method() {
+
+        try {
+
+            $this->room_id = 1;
+            $this->response = $this->get("/api/api_tests/rooms/{$this->room_id}/test/show");
+
+            $this->response->assertStatus(200);
+            $this->content = json_decode($this->response->getContent(), true);
+            $this->assertArrayHasKey('room info', $this->content, 'Response should contain room information');
+            
+            $this->response->assertJson($this->content);
+
+        } catch(\Exception $e) {
+            $this->fail('Error: ' . $e->getMessage());
+        }
+    }
 }
