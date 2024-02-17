@@ -7,6 +7,11 @@ The system allows for the management of hotel rooms, bookings, customer interact
 It is designed to streamline the room booking process, manage customer details, and handle payments securely.
 
 # Setup Instructions:
+Мake sure to run:
+  - composer install or
+  - composer update
+to install or update the project dependencies as needed.
+
 Ensure to migrate the database schema by executing the following command:
   - php artisan migrate
 
