@@ -6,6 +6,19 @@ This project provides a simple API for managing a Hotel Booking System using Lar
 The system allows for the management of hotel rooms, bookings, customer interactions, and payments. 
 It is designed to streamline the room booking process, manage customer details, and handle payments securely.
 
+# Setup Instructions:
+Ensure to migrate the database schema by executing the following command:
+  - php artisan migrate
+
+Populate the database with default records using the following command:
+  - php artisan db:seed
+
+Run the command below to initialize the client for Laravel Passport, enabling secure authentication:
+  - php artisan passport:install
+
+Following the setup steps, you can utilize Postman to test the API functionality thoroughly.
+These steps ensure a robust setup and smooth operation of the Hotel Booking System API, allowing for seamless management of rooms, bookings, customers, and payments.
+
 # Models and relationships:
 The models are devided into four groups - Room, Booking, Customer, and Payment.
 - A Room can have many Bookings.
