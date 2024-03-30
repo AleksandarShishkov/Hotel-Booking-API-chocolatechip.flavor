@@ -1,5 +1,4 @@
-# Hotel-Booking-API
-API system for managing rooms/bookings/customers/payments
+# API system for managing rooms/bookings/customers/payments
 
 # Description:
 This project provides a simple API for managing a Hotel Booking System using Laravel. 
